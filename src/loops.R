@@ -71,4 +71,13 @@ for (i in v){
 
 
 "next"
-  
+# The next statement in R programming language is useful when we want to skip the current iteration of a loop without terminating it. 
+# On encountering next, the R parser skips further evaluation and starts next iteration of the loop
+
+for (i in 1:10){
+  if (i == 3 | i == 6) {
+    next()
+  }
+  print(i)
+}
+    
