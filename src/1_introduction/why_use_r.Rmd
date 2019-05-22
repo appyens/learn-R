@@ -1,0 +1,37 @@
+---
+title: "Why use R"
+author: "Anurag"
+date: "22/05/2019"
+output: pdf_document
+---
+
+## R is open source and free!
+R is free to download as it is licensed under the terms of GNU General Public license.You can look at the source to see what’s happening under the hood. There’s more, most R packages are available under the same license so you can use them, even in commercial applications without having to call your lawyer.
+
+## R is popular – and increasing in popularity
+IEEE publishes a list of the most popular programming languages each year. R was ranked 5th in 2016, up from 6th in 2015. It is a big deal for a domain-specific language like R to be more popular than a general purpose language like C#.This not only shows the increasing interest in R as a programming language, but also of the fields like Data Science and Machine Learning where R is commonly used.
+
+## R runs on all platforms
+You can find distributions of R for all popular platforms – Windows, Linux and Mac.
+R code that you write on one platform can easily be ported to another without any issues. Cross-platform interoperability is an important feature to have in today’s computing world – even Microsoft is making its coveted .NET platform available on all platforms after realizing the benefits of technology that runs on all systems.
+
+## Learning R will increase your chances of getting a job
+According to the Data Science Salary Survey conducted by O’Reilly Media in 2014, data scientists are paid a median of $98,000 worldwide. The figure is higher in the US – around $144,000.Of course, knowing how to write R programs won’t get you a job straight away, a data scientist has to juggle a lot of tools to do their work. Even if you are applying for a software developer position, R programming experience can make you stand out from the crowd.
+
+## R is being used by the biggest tech giants
+Adoption by tech giants is always a sign of a programming language’s potential. Today’s companies don’t make their decisions on a whim. Every major decision has to be backed by concrete analysis of data.
+Companies Using R
+
+R is the right mix of simplicity and power, and companies all over the world use it to make calculated decisions. Here are a few ways industry stalwarts are using R and contributing to the R ecosystem.
+```
+Company	                    Application/Contribution
+Twitter	                    Monitor user experience
+Ford	                    Analyse social media to support design decisions for their cars
+New York Times	            Infographics, data journalism
+Microsoft	                Released Microsoft R Open, 
+                            an enhanced R distribution and Microsoft R server after acquiring Revolution Analytics in 2015
+Human Rights                Data Analysis Group	Measure the impact of war
+Google	                    Created the R style guide for the R user community inside Googl
+```
+
+While using R, you can rest assured that you are standing on the shoulders of giants.

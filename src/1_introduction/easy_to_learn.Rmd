@@ -1,0 +1,21 @@
+---
+title: "Easy to learn"
+author: "Anurag"
+date: "22/05/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Is R programming an easy language to learn?
+This is a difficult question to answer. Many researchers are learning R as their first language to solve their data analysis needs.
+
+That’s the power of the R programming, it is simple enough to learn as you go. All you need is data and a clear intent to draw a conclusion based on analysis on that data.
+
+In fact, R is built on top of the language S programming that was originally intended as a programming language that would help the student learn programming while playing around with data.
+
+However, programmers that come from a Python, PHP or Java background might find R quirky and confusing at first. The syntax that R uses is a bit different from other common programming languages.
+
+While R does have all the capabilities of a programming language, you will not find yourself writing a lot of if conditions or loops while writing code in the R language. There are other programming constructs like vectors, lists, frames, data tables, matrices etc. that allow you to perform transformations on data in bulk.

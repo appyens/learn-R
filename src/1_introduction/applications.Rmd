@@ -1,0 +1,23 @@
+---
+title: "Applications"
+author: "Anurag"
+date: "22/05/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Applications of R Programming in Real World
+
+## Data Science
+Harvard Business Review named data scientist the “sexiest job of the 21st century”. Glassdoor named it the “best job of the year” for 2016. With the advent of IoT devices creating terabytes and terabytes of data that can be used to make better decisions, data science is a field that has no other way to go but up.Simply explained, a data scientist is a statistician with an extra asset: computer programming skills. Programming languages like R give a data scientist superpowers that allow them to collect data in realtime, perform statistical and predictive analysis, create visualizations and communicate actionable results to stakeholders.
+Most courses on data science include R in their curriculum because it is the data scientist’s favourite tool.
+
+## Statistical computing
+R is the most popular programming language among statisticians. In fact, it was initially built by statisticians for statisticians. It has a rich package repository with more than 9100 packages with every statistical function you can imagine.R’s expressive syntax allows researchers – even those from non computer science backgrounds to quickly import, clean and analyze data from various data sources.
+R also has charting capabilities, which means you can plot your data and create interesting visualizations from any dataset.
+
+## Machine Learning
+R has found a lot of use in predictive analytics and machine learning. It has various package for common ML tasks like linear and non-linear regression, decision trees, linear and non-linear classification and many more.Everyone from machine learning enthusiasts to researchers use R to implement machine learning algorithms in fields like finance, genetics research, retail, marketing and health care.

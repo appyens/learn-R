@@ -1,0 +1,62 @@
+---
+title: "Getting started With R console"
+author: "Anurag"
+date: "22/05/2019"
+output: pdf_document
+---
+
+While RStudio is an amazing tool to get started learning R, it is only an interface to the R console. It is important to be familiar with running R programs directly through the command prompt or terminal because you might not always have access to a graphical interface if you are running R programs on a server.
+
+If R is installed correctly, you can open the R console by typing ‘R’ on the terminal and pressing Return/Enter.
+
+When you start R, the first thing you will see is the R console with the default “>” prompt. We can start typing commands directly at the prompt and hit return to execute it.
+
+For instance, try typing the following commands on the R prompt
+```
+> n <- c(2, 3, 5, 10, 14)
+> mean(n)
+[1] 6.8
+
+```
+
+As you can see, each command is executed as soon as you press the return key and if there is any output(the mean in the above example), then it is displayed.
+
+If the command is incomplete when you hit return, the prompt changes to “+” and continues to take input until the command is syntactically complete.
+
+Alternatively, we can execute R commands stored in an external file using the function source() as follows.
+```
+> source("example.R ")
+To exit the command prompt we can call the q() function (as in quit).
+> q()
+```
+
+## Different ways to run R scripts
+Sometimes you may need to run an R program inside a batch or shell script. There are different ways to achieve that.
+
+### Method 1: Using R CMD BATCH command
+Save your R script in a text file with .R extension and type the following command.
+```
+R CMD BATCH /home/demo/learnR/Rprogramming.R
+```
+The output of this command will be stored in a file called Rprogramming.Rout
+
+### Method 2: Using Rscript
+Use the following command
+```
+Rscript /home/demo/learnR/Rprogramming.R
+```
+
+The difference between R CMD and Rscript is that Rscript prints the output to STDOUT instead of a file.
+
+If you want to turn your R program into an executable, you can specify that you want the file to run using Rscript by adding the following line at the beginning of your R script.
+
+```
+#!/usr/bin/env Rscript
+For example, If your R program looks like
+#!/usr/bin/env Rscript
+n <- c(2, 3, 5, 10, 14)
+mean(n)
+```
+
+You can directly execute it from the terminal as ./Rprogramming.R
+
