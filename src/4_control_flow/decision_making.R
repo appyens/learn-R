@@ -34,13 +34,9 @@ if("Truth" %in% x) {
 "ifelse()"
 # There is an easier way to use if…else statement specifically for vectors in R programming.
 # You can use ifelse() function instead; the vector equivalent form of the if…else statement.
-# 
 # Vectors form the basic building block of R programming.
-# 
 # Most of the functions in R take vector as input and output a resultant vector.
-# 
 # This vectorization of code, will be much faster than applying the same function to each element of the vector individually.
-# 
 # Similar to this concept, there is a vector equivalent form of the if…else statement in R, the ifelse() function.
 # syntax:
 ifelse(test_expression, x, y)
