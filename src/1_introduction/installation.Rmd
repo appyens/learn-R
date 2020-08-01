@@ -1,0 +1,139 @@
+---
+title: "Installation"
+author: "Anurag"
+date: "22/05/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Run R Programming on Your Computer
+
+You will find the easiest way to run R programming on your system (Windows, Mac OS X or linux) in this section.
+
+## Run R Programming in Mac
+1 Go to official site of R programming
+2 Click on the CRAN link on the left sidebar
+3 Select a mirror
+4 Click “Download R for (Mac) OS X”
+5 Download the latest pkg binary
+6 Run the file and follow the steps in the instructions to install R.
+
+## Run R Programming in Linux
+
+## On Ubuntu
+The Advanced Packaging Tool (APT) that comes with Ubuntu uses a file called sources.list to decide where to search for packages.
+
+Before we can install R, we need to tell Ubuntu to look into the CRAN R repositories and also add a public key for secure download.
+
+1 Open the sources.list file(usually located at /etc/apt/sources.list) in a text editor and add the following line at the end
+```
+deb https://<my.favorite.cran.mirror>/bin/linux/ubuntu <distribution>/
+```
+For instance, If you are running Ubuntu trusty and want to use the RStudio CRAN mirror, the line would be
+
+```
+deb https://cran.rstudio.com/bin/linux/ubuntu trusty/
+```
+
+If you are lazy like all good programmers, you can do this directly from the terminal without having to open a text editor as
+
+```
+sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+
+```
+
+2 Authenticate the Ubuntu packages on CRAN
+The packages for Ubuntu that are stored on CRAN mirrors are all signed using a key with ID E084DAB9
+We download the public key from the Ubuntu keyserver using this ID and add it to our system using the command
+
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+```
+
+3 Update the list of available packages
+Since we modified the sources.list, we need to tell APT to download the packages that are available from the CRAN servers by running the command.
+```
+sudo apt-get update
+```
+
+4 Download and install R
+Almost done. Just download and install the R package by running the command:
+```
+sudo apt-get -y install r-base
+```
+
+5 Open up the R console and issue following command.
+
+```
+$ R
+```
+
+If there were no issues during installation. The R console should open successfully with information about your R installation.
+
+## RedHat-based Distributions
+The process is similar for Redhat-based Linux Distributions like CentOS. Instead of modifying a file like sources.list, you can directly add the repository for EPEL(Extra Packages for Enterprise Linux) by using the following command.
+```
+su -c 'rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm'
+```
+
+You can find the url for the correct rpm file for your system here.
+
+Now it’s just a matter of updating the list of available packages and installing R.
+
+```
+sudo yum update
+sudo yum install R
+```
+
+## Fedora
+Installing R on fedora is a piece of cake. The Fedora repositories have the latest version of R binaries installed.
+
+Just run the commands:
+```
+sudo yum update
+sudo yum install R
+```
+## Run R Programming in Windows
+### 1 Go to official site of R programming
+### 2 Click on the CRAN link on the left sidebar
+### 3 Select a mirror
+### 4 Click “Download R for Windows”
+### 5 Click on the link that downloads the base distribution
+### 6 Run the file and follow the steps in the instructions to install R.
+
+## Should I install the 32-bit version or the 64-bit version?
+Most people don’t need to worry about this. Obviously the 64-bit version of R won’t work on a 32-bit machine but both the 32-bit and 64-bit versions of R runs seamlessly on 64-bit Windows.
+
+You might want to consider installing 32-bit version of R if your production environment is 32-bit because some packages might have compatibility issues and might cause the “But it works on my machine” fiasco.
+
+## Installing RStudio
+RStudio is the most popular IDE for running R programs and has a free license.
+
+The installation process is straight forward. Download the RStudio (Windows, Linux and Mac OS X), run the file and follow the instructions to install it.
+
+Note: R should be installed on your system before you can run RStudio.
+
+After you install RStudio and open it for the first time, it will ask you to choose which version of R to use.
+
+Choose R version in Rstudio
+
+If RStudio detects that R hasn’t been installed on your system, it will show you a warning.
+
+If R has been installed, you’ll see the R Studio interface. In the beginning, you can only see the R console where you can write one line statements in R and execute them.
+
+However, even for trivial work, you will need to perform a sequence of steps and it is better to create an R script.
+
+Go to File > New File > R Script as shown in the screenshot below to create a new R script.
+
+New file in RStudio
+
+You can now see the R Script Editor where you can type and save R programs that span multiple lines. RStudio isn’t just a text editor but an IDE that helps you run and debug R scripts with ease.
+
+The R Studio GUI is divided into 4 major sections as shown in the screenshot below:
+
+
+
+ 

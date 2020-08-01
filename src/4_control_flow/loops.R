@@ -76,7 +76,7 @@ for (i in v){
 
 for (i in 1:10){
   if (i == 3 | i == 6) {
-    next()
+    next
   }
   print(i)
 }
